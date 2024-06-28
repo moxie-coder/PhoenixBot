@@ -175,10 +175,14 @@ class PingCommand extends Subcommand {
             .setColor(Colors.Orange)
             .setThumbnail(member.user.displayAvatarURL({ dynamic:true }))
 
-            .setTimestamp(new Date());
-        }
+				.setTimestamp(new Date());
+			}
 
-        interaction.followUp({ embeds: [embed] });
+			interaction.followUp({ embeds: [embed] });
+		} catch (error) {
+			console.error(error);
+			await interaction.followUp({ content: 'There was an error while executing this command!', ephemeral: true });
+		}
       }
 
       async chatInputAfk(interaction) {

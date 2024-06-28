@@ -38,6 +38,7 @@
     "languagedetect": "^2.0.0",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.45",
+    "mongodb": "^6.5.0",
     "mongoose": "^8.3.1",
     "node-fetch": "^2.7.0",
     "os-utils": "^0.0.14",
